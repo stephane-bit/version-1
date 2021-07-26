@@ -15,7 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarousselComponent } from './caroussel/caroussel.component';
 import { ServicesComponent } from './services/services.component';
 import { PiedComponent } from './pied/pied.component';
-
+import { InscriptionComponent } from './inscription/inscription.component';
+import { AccueilComponent } from './accueil/accueil.component';
 registerLocaleData(fr);
 
 @NgModule({
@@ -24,7 +25,9 @@ registerLocaleData(fr);
     TeteComponent,
     CarousselComponent,
     ServicesComponent,
-    PiedComponent
+    PiedComponent,
+    InscriptionComponent,
+    AccueilComponent
   ],
   imports: [
     BrowserModule,

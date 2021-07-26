@@ -13,4 +13,4 @@ export class TeteComponent implements OnInit {
   }
 
 }
-
+export class NzDemoGridResponsiveMoreComponent {}
