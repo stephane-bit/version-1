@@ -1,6 +1,64 @@
-<app-tete></app-tete>
-<app-caroussel></app-caroussel>
-<app-services></app-services>
-<app-pied></app-pied>
+<!--layout-->
+<div class="container-fluid overflow-hidden">
+  <div class="row vh-100 overflow-auto">
+      <div class="col-12 col-sm-3 col-xl-2 px-sm-2 px-0 d-flex sticky-top justify-content-center" style="background-color: rgb(4, 3, 73); ">
+          <div class="d-flex flex-sm-column flex-row flex-grow-1 align-items-center align-items-sm-start px-3 pt-2 text-white">
+              <a href="/" class="d-flex align-items-center pb-sm-3 mb-md-0 me-md-auto text-decoration-none">
+                  <span class="fs-5"><span class="d-none d-sm-inline"><h2 class="h2">CONDUITE INTELLIGENTE</h2></span></span>
+              </a>
+              <ul class="nav nav-pills flex-sm-column flex-row flex-nowrap flex-shrink-1 flex-sm-grow-0 flex-grow-1 mb-sm-auto mb-0 justify-content-center align-items-center align-items-sm-start" id="menu">
+                  <li>
+                      <a href="#" data-bs-toggle="collapse" class="nav-link px-sm-0 px-2">
+                        <a href="#"><i class="bi bi-house-fill text-white" ></i></a><span class="ms-1 d-none d-sm-inline text-white">Smart Driving</span> </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link px-sm-0 px-2">
+                        <a href="#"><i class="bi bi-telephone-fill text-white"></i></a><span class="ms-1 d-none d-sm-inline text-white">+237 698 791 492</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link px-sm-0 px-2">
+                        <a href="#"><i class="bi bi-facebook text-white"></i></a><span class="ms-1 d-none d-sm-inline text-white">facebook</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link px-sm-0 px-2">
+                        <a href="#"><i class="bi bi-twitter text-white"></i></a><span class="ms-1 d-none d-sm-inline text-white">twitter</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link px-sm-0 px-2">
+                        <a href="#"><i class="bi bi-youtube text-white"></i></a><span class="ms-1 d-none d-sm-inline text-white">youtube</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link px-sm-0 px-2">
+                        <a href="#"><i class="bi bi-linkedin text-white"></i></a><span class="ms-1 d-none d-sm-inline text-white">linkedin</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link px-sm-0 px-2">
+                        <a href="#"><i class="bi bi-people-fill text-white"></i></a><span class="ms-1 d-none d-sm-inline text-white">client</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link px-sm-0 px-2">
+                        <a href="#"><i class="bi bi-person-fill text-white"></i></a><span class="ms-1 d-none d-sm-inline text-white">Admin</span></a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <div class="col d-flex flex-column h-sm-200">
+        <app-tete></app-tete>
+          <main class="row overflow-auto">
+            <router-outlet></router-outlet>
+          </main>
+          <footer class="row bg-light  mt-auto">
+             <app-pied></app-pied>
+          </footer>
+      </div>
+  </div>
+</div>
+<!--/layout-->
 
-<router-outlet></router-outlet>
+
+

@@ -12,22 +12,25 @@ import fr from '@angular/common/locales/fr';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CarousselComponent } from './caroussel/caroussel.component';
 import { ServicesComponent } from './services/services.component';
 import { PiedComponent } from './pied/pied.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { AccueilComponent } from './accueil/accueil.component';
+import { NzCardModule } from 'ng-zorro-antd/card';
+import { ConnecterComponent } from './connecter/connecter.component';
+import { ContactComponent } from './contact/contact.component';
 registerLocaleData(fr);
 
 @NgModule({
   declarations: [
     AppComponent,
     TeteComponent,
-    CarousselComponent,
     ServicesComponent,
     PiedComponent,
     InscriptionComponent,
-    AccueilComponent
+    AccueilComponent,
+    ConnecterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ registerLocaleData(fr);
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    NzIconModule
+    NzIconModule,
+    NzCardModule
   ],
   providers: [{ provide: NZ_I18N, useValue: fr_FR }],
   bootstrap: [AppComponent]

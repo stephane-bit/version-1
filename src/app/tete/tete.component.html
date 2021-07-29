@@ -1,79 +1,3 @@
-
-
-<!---------section top header--------->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-6 col-md-4 ">
-        <div class="appel">
-          <a href="#"><i class="bi bi-telephone-fill m-3"> call : +237 698 791 492 </i></a>
-          <a href="#"><i class="bi bi-house-fill m-3"></i>SMART DRIVING</a>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="reseaux">
-          <a href="#"><i class="bi bi-facebook m-3"></i></a>
-          <a href="#"><i class="bi bi-twitter m-3"></i></a>
-          <a href="#"><i class="bi bi-linkedin m-3"></i></a>
-          <a href="#"><i class="bi bi-instagram m-3"></i></a>
-          <a href="#"><i class="bi bi-youtube m-3"></i></a>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="connect">
-          <!-- Button trigger modal -->
-          <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <i class="bi bi-person-fill"></i>
-          </button>
-
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                    <div class="card w-100">
-                      <div class="card-header">
-                        <h3>SE CONNECTER</h3>
-                      <div class="card-body">
-                        <form>
-                          <div class="input-group form-group p-2">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="non d'utilisateur...">
-                          </div>
-                          <div class="input-group form-group p-2">
-                            <div class="input-group-prepend ">
-                              <span class="input-group-text"><i class="bi bi-key"></i></span>
-                            </div>
-                            <input type="password" class="form-control" placeholder="mot de passe...">
-                          </div>
-                          <div class="row align-items-center remember p-2">
-                            <input type="checkbox">Se souvenir de moi
-                          </div>
-                          <div class="form-group">
-                            <input type="submit" value="Login" class="btn float-right login_btn">
-                          </div>
-                        </form>
-                      </div>
-                      <div class="card-footer">
-                        <div class="d-flex justify-content-center links">
-                          Je n'ai pas de compte?<a routerLink="/inscription" >S'inscrire</a>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                          <a href="#">Mot de passe oublié?</a>
-                        </div>
-                      </div>
-                    </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  <div>
-<!---------/section top header--------->
 <!---------navigation et logo --------->
 <div class="container-fluid" style="background-color:rgb(4, 3, 73);">
   <div class="navbar  navbar-light">
@@ -108,18 +32,64 @@
                     <li><a class="dropdown-item" href="#">Installation</a></li>
                   </ul>
                 </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >
+                    PRENDRE RENDEZ-VOUS
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">pour instalation</a></li>
+                    <li><a class="dropdown-item" href="#">pour réservation</a></li>
+                  </ul>
+                </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">CONTACT</a>
+                  <a class="nav-link" routerLink="/contacter">CONTACT</a>
                 </li>
               </ul>
               <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline" type="submit">Search</button>
+                <div class="connect">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="bi bi-person-fill"></i>
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                            <div class="card w-100">
+                              <div class="card-header">
+                                <h3>AUTHENTIFICATION</h3>
+                              <div class="card-body">
+                                <form>
+                                  <div class="form-group">
+                                      <div class="d-flex justify-content-center p-3 links">
+                                        J'ai dejà un compte...?
+                                      </div>
+                                    <a routerLink="/connexion"><button class="btn float-right login_btn">Se connecter</button></a>
+                                  </div>
+                                  <div class="form-group">
+                                     <div class="d-flex justify-content-center p-3 links">
+                                       Je n'ai pas de compte...?
+                                     </div>
+                                    <a routerLink="/inscription"><button class="btn float-right login_btn">S'inscrire</button></a>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
-        </nav>
-      </div>
+       </nav>
   </div>
 </div>
 <!---------/navigation et logo--------->

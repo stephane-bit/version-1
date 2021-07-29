@@ -1,6 +1,6 @@
 /*Formulaire de login*/
 .card{
-height: 370px;
+height: 250px;
 margin-top: auto;
 margin-bottom: auto;
 width: 400px;
@@ -9,6 +9,9 @@ background-color:rgb(4, 3, 73);
 
 .card-header h3{
 color: white;
+font-size: 15px;
+font-weight: bold;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .social_icon{
@@ -30,45 +33,17 @@ box-shadow: 0 0 0 0 !important;
 
 }
 
-.remember{
-color: white;
-}
-
-.remember input
-{
-width: 20px;
-height: 20px;
-margin-left: 15px;
-margin-right: 5px;
-}
-
-.login_btn{
-color: black;
-background-color: rgb(4, 3, 73);
-width: 100px;
-}
-
-.login_btn:hover{
-color: yellow;
-background-color: rgb(4, 3, 73);
-}
-
 .links{
-color: white;
-}
-.links >a,a{
-  color: yellow;
+color: yellow;
+font-size: 13px;
+font-style: italic;
+
 }
 
-.links a{
-margin-left: 4px;
-}
 .btn{
   background-color:rgb(4, 3, 73);
 }
-.btn >i{
-  color:white;
-}
+
 /* ------------ section top header ---------*/
 .appel{
   text-align: center;
@@ -90,6 +65,7 @@ margin-left: 4px;
 
 .connect{
   text-align: center;
+  margin-left: 10px;
 }
 .connect > a{
   text-decoration: none;
@@ -104,9 +80,8 @@ margin-left: 4px;
 
 /*----------section logo et navigation-----------*/
 .navbar-brand > img{
-  border-radius: 50%;
-  height: 80px;
-  margin-left: 200px;
+  border-radius: 2%;
+  height: 50px;
 }
 .menu{
   border: 0px solid  red;
